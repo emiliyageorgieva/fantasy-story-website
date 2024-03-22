@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantasy Story</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+    background-image: url('background2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+  }
+  #background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+  }
+  #container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure characters are above the overlay */
+  }
+  .location {
+    position: absolute;
+    text-align: center;
+    z-index: 2; /* Ensure characters are above the overlay */
+  }
+  .location img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 0; /* No border radius */
+    border: 4px solid white; /* Add border around images */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Box shadow */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+    max-width: 60%; /* Ensure image does not exceed container width */
+    max-height: 60%; /* Limit image height to 80% of viewport height */
+  }
+  .location img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  .location .textbox {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    border-radius: 20px; /* Rounder corners */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Increased letter spacing */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Box shadow */
+  }
+  #story-box {
+    position: absolute;
+    text-align: justify;
+    width: 70%; /* Adjusted width */
+    max-width: 1350px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)); /* Gradient background */
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    bottom: -63%; /* Adjusted position */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure text box is above the overlay */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Box shadow */
+  }
+  #navigation-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #navigation-buttons a {
+    text-decoration: none;
+    margin: 0 10px; /* Adjust spacing between buttons */
+  }
+  #navigation-buttons button {
+    padding: 0; /* Remove padding */
+    font-size: 16px;
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Fancy effects */
+    font-family: 'El Messiri', sans-serif;
+  }
+  #navigation-buttons button:hover {
+    color: black; /* Black text */
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+  <div id="background-overlay"></div>
+  <div id="container">
+    <!-- Location photos -->
+    <div class="location" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <img src="loc1.png" alt="Location Photo">
+      <div class="textbox">Arbor Solis (Tree of the Sun)</div>
+    </div>
+  </div>
+ 
+  <div id="story-box">
+    <p>
+
+As they stood in the tranquil clearing, bathed in the soft light of the setting sun, Lyra, Aurelia, and Celeste gathered beneath the sprawling branches of the ancient willow tree. Their faces were etched with concern as they spoke in hushed tones, their words carried on the gentle breeze that rustled through the leaves.<br>
+
+"The darkness grows stronger with each passing day," Celeste murmured, her voice tinged with a sense of urgency. "We cannot afford to ignore the signs any longer. Our realm is in grave danger."<br>
+
+Aurelia nodded solemnly, her curls bouncing with each movement. "The creatures of the forest whisper of dark powers gathering beyond the borders of our land," she said, her voice filled with trepidation. "If we do not act swiftly, our kingdom may be consumed by shadow."<br>
+
+Lyra, her emerald eyes shimmering with determination, stepped forward, her bark-like skin glowing in the fading light. "We are the chosen ones," she declared, her voice steady and resolute. "From each of our species, we have been called upon to embark on this quest—a quest to retrieve the magical gem that will vanquish the darkness and restore equilibrium to the universe."<br>
+
+The three beings exchanged a solemn glance, their bond forged through shared purpose and unwavering resolve. Though the task ahead was fraught with peril, they knew that they could not falter in their mission.<br>
+
+"We must journey beyond the borders of our realm, into the heart of darkness itself," Celeste said, her voice ringing with authority. "Only by confronting the source of the evil can we hope to overcome it."<br>
+
+With a silent nod of agreement, Lyra, Aurelia, and Celeste clasped hands, their unity a beacon of hope amidst the encroaching shadows. Together, they would face the darkness head-on, armed with courage, strength, and the unwavering belief that light would always triumph over darkness in the end.<br>
+
+The forest seemed to hold its breath as the trio set forth on their journey towards the mysterious cave. Shadows lengthened, stretching across the forest floor like grasping fingers, as if warning them of the dangers that lay ahead. Yet, undeterred, Lyra, Aurelia, and Celeste pressed on, their determination shining like beacons in the gathering gloom.<br>
+
+The forest whispered secrets as they walked, the rustle of leaves and the chirping of crickets serving as their companions on the journey. Overhead, the canopy of trees formed a dense, protective canopy, filtering the fading sunlight into dappled patterns that danced along the forest floor.<br>
+
+As they ventured deeper into the heart of the forest, the air grew cooler, carrying with it the scent of damp earth and pine. The path before them was overgrown with tangled roots and twisting vines, a testament to the wild, untamed nature of the woodland realm.<br>
+
+Aurelia skipped ahead, her laughter ringing through the trees like chimes, her vibrant orange dress a splash of color against the muted tones of the forest. Lyra followed close behind, her emerald eyes scanning the surroundings with a mix of curiosity and caution. Celeste brought up the rear, her gaze sharp and alert, her hand resting on the hilt of her silver blade.<br>
+
+As they journeyed onward, the forest seemed to come alive around them, its inhabitants watching with silent curiosity from the safety of the shadows. Birds flitted from branch to branch, their colorful plumage flashing in the fading light, while small woodland creatures scurried through the underbrush, unseen but ever-present.<br>
+
+Hours passed as they trekked deeper into the heart of the forest, the dense foliage gradually giving way to rocky terrain and steep inclines. The path grew more treacherous with each step, yet still they pressed on, driven by a shared sense of purpose and the knowledge that their quest held the fate of their realm in the balance.</p>
+<br>
+  <div id="navigation-buttons">
+    <a href="story_characters.html">
+      <button>← Previous page</button>
+    </a>
+    <a href="location2_3.html">
+      <button>Next page →</button>
+  
+  </div>
+</body>
+</html>
+

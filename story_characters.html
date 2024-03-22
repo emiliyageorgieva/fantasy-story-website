@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantasy Story</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+    background-image: url('background2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+  }
+  #background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+  }
+  #container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure characters are above the overlay */
+  }
+  .character {
+    position: absolute;
+    text-align: center;
+    z-index: 2; /* Ensure characters are above the overlay */
+  }
+  .character img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; /* Make images circular */
+    border: 4px solid white; /* Add border around images */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Box shadow */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+    width: 240px; /* Increase the width of the images */
+  }
+  .character img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  .character .textbox {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    border-radius: 20px; /* Rounder corners */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Increased letter spacing */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Box shadow */
+  }
+  #story-box {
+    position: absolute;
+    text-align: justify;
+    width: 90%; /* Adjusted width */
+    max-width: 1350px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)); /* Gradient background */
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    bottom: -50%; /* Adjusted position */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure text box is above the overlay */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Box shadow */
+  }
+     #next-page-button {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#next-page-button button {
+  padding: 0; /* Remove padding */
+  font-size: 16px;
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Fancy effects */
+  font-family: 'El Messiri', sans-serif;
+}
+
+#next-page-button button:hover {
+  color: black; /* Black text */
+  transform: translateY(-2px);
+}
+</style>
+</head>
+<body>
+  <div id="background-overlay"></div>
+  <div id="container">
+    <div class="character" style="top: 15%; left: 10%;">
+      <img src="lyra.png" alt="Character 1">
+      <div class="textbox">Lyra Wildroot</div>
+    </div>
+    <div class="character" style="top: 25%; left: 40%;">
+      <img src="aurelia.png" alt="Character 2">
+      <div class="textbox">Aurelia Crimsonleaf</div>
+    </div>
+    <div class="character" style="top: 15%; right: 10%;">
+      <img src="celeste.png" alt="Character 3">
+      <div class="textbox">Celeste Rustlewind</div>
+    </div>
+  </div>
+ 
+  <div id="story-box">
+    <p>
+<center>
+    <font size="+3">The Willowsong Chronicles</font></center>
+<br>
+In the heart of a dense forest, where sunlight dances through the canopy and birdsong fills the air, there lies a hidden sanctuary—a tranquil clearing enclosed by towering trees. A gentle river meanders nearby, its crystal waters reflecting the azure sky above. Wildflowers adorn the banks, their vibrant hues painting a picturesque scene. A majestic willow stood at the center of the tranquil clearing like a sentinel of the forest, its gnarled branches reaching skyward in a graceful dance. Its trunk, weathered and ancient, bore the scars of countless seasons, each mark a testament to the passage of time and the resilience of nature.
+
+The willow's foliage cascaded like a shimmering curtain of green, its delicate leaves rustling in the gentle breeze like whispers of ancient secrets. Bathed in the golden light of the sun, the leaves seemed to dance with a life of their own, their ethereal beauty captivating all who beheld them.
+
+Beneath the sprawling canopy of the willow, the air was cool and fragrant, infused with the earthy scent of moss and damp earth. Shafts of sunlight filtered through the dense foliage, dappling the forest floor in a mesmerizing pattern of light and shadow.
+
+As the wind whispered through its branches, the willow seemed to sigh with a quiet wisdom, its ancient roots sinking deep into the rich soil of the forest floor. It was a symbol of strength and endurance, a living testament to the power and resilience of nature.
+
+The willow's branches swayed gently in the breeze, casting dappled shadows on the emerald grass below. It was a haven for all manner of forest creatures, from birds and squirrels to rabbits and deer, who sought refuge in its welcoming embrace.
+
+To those who knew its secrets, the willow was more than just a tree—it was a guardian, a protector, a silent witness to the ebb and flow of life in the forest. Its presence filled the clearing with a sense of peace and tranquility, a sanctuary amidst the chaos of the natural world.
+
+In this enchanted glade resides a trio of remarkable beings, each as unique and captivating as the mystical realm they inhabit.<br><br>
+
+Lyra Wildroot, a nymph of ethereal beauty, embodies the essence of the forest itself. With an average build and slender frame, she moves with the grace of a willow swaying in the breeze. Bark-like skin, adorned with intricate golden markings, bears witness to her countless adventures amidst the woodland depths. Her mesmerizing emerald eyes, reflecting the wisdom of ancient trees, betray a gentle mellow nature. Shy and reserved, yet possessing a quiet strength, Lyra's presence brings an aura of tranquillity to the clearing. Leaves, vines, and flowers cascade like a verdant crown from her short, messy hair, weaving a tapestry of nature's bounty.<br><br>
+
+Aurelia Crimsonleaf, a fairy of boundless energy and youthful exuberance, flits through the clearing with a joyous abandon. Standing only as tall as a sapling, her plump form is adorned with a riot of fiery red curls that frame her sun-kissed face. Dark skin, akin to rich mahogany, contrasts with her vibrant attire—a flowing orange dress adorned with petals that shimmer like molten gold. Translucent wings, tinged with hues of yellow, flutter behind her like a radiant halo. With warm brown eyes that sparkle with mischief, Aurelia embodies the innocence and wonder of youth.<br><br>
+
+Celeste Rustlewind, an elf of regal bearing and commanding presence, surveys the clearing with icy blue eyes that betray a hint of hidden depths. Towering above her companions, she possesses a lithe figure and porcelain skin that seems to glow in the dappled sunlight. Long, silver hair cascades down her back like a waterfall of moonlight, framing a face chiselled with determination. Dressed in sleek black attire and adorned with silver jewelry, Celeste exudes an air of authority and mystery. Skilled with a knife and possessing a temper as sharp as her blade, she commands respect with a single glance from her almond-shaped, cat-like eyes.<br><br>
+
+Together, these three beings inhabit a realm of magic and wonder—a place where the boundaries between reality and fantasy blur, and where the secrets of the forest are whispered on the breeze.
+
+</p>
+<div id="next-page-button">
+    <a href="1location.html">
+      <button>Next page →</button>
+</body>
+</html>

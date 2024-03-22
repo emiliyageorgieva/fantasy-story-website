@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantasy Story</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+    background-image: url('background2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+  }
+  #background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+  }
+  #container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure characters are above the overlay */
+  }
+  .location {
+    position: absolute;
+    text-align: center;
+    z-index: 2; /* Ensure characters are above the overlay */
+  }
+  .location img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 0; /* No border radius */
+    border: 4px solid white; /* Add border around images */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Box shadow */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+    max-width: 60%; /* Ensure image does not exceed container width */
+    max-height: 60%; /* Limit image height to 80% of viewport height */
+  }
+  .location img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  .location .textbox {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    border-radius: 20px; /* Rounder corners */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Increased letter spacing */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Box shadow */
+  }
+  #story-box {
+    position: absolute;
+    text-align: justify;
+    width: 70%; /* Adjusted width */
+    max-width: 1350px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)); /* Gradient background */
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    bottom: -15%; /* Adjusted position */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure text box is above the overlay */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Box shadow */
+  }
+  #navigation-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #navigation-buttons a {
+    text-decoration: none;
+    margin: 0 10px; /* Adjust spacing between buttons */
+  }
+  #navigation-buttons button {
+    padding: 0; /* Remove padding */
+    font-size: 16px;
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Fancy effects */
+    font-family: 'El Messiri', sans-serif;
+  }
+  #navigation-buttons button:hover {
+    color: black; /* Black text */
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+  <div id="background-overlay"></div>
+  <div id="container">
+    <!-- Location photos -->
+    <div class="location" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <img src="loc5.png" alt="Location Photo">
+      <div class="textbox">Mythorum Domus<br>(Home of the Mythical)
+
+
+
+</div>
+    </div>
+  </div>
+ 
+  <div id="story-box">
+    <p>
+As they approached the outskirts of the town, they were greeted by the sight of colourful banners fluttering in the breeze and the sound of cheerful voices drifting on the air. Mythorum Domus was alive with excitement, its streets thronged with villagers who had come out to welcome their heroes home.
+
+Cheers erupted as Lyra, Aurelia, and Celeste made their way through the crowded streets, their faces beaming with pride and joy. They were met with hugs, handshakes, and expressions of gratitude from all who crossed their path, their hearts warmed by the outpouring of love and support from their fellow townsfolk.
+
+At the heart of the town square, a grand feast awaited them, a testament to the town's appreciation for their bravery and sacrifice. Tables groaned under the weight of delicious food and drink, while musicians played lively tunes that set the mood for the festivities to come.
+
+As the sun set on the horizon, casting a warm glow over the town, Lyra, Aurelia, and Celeste took their places at the head of the table, surrounded by their friends, family, and fellow adventurers. It was a moment of pure joy and celebration, a time to reflect on the challenges they had faced and the triumphs they had achieved.
+
+And as they raised their glasses in a toast to the future, their hearts filled with hope and excitement for the adventures that lay ahead.
+
+</p>
+<br>
+  <div id="navigation-buttons">
+    <a href="4location.html">
+      <button>← Previous page</button>
+   
+  </div>
+</body>
+</html>
